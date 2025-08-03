@@ -2,7 +2,8 @@
 
 ## Пример options.yaml файла
 
-`vm:
+```
+vm:
    - name: void
      ram: 4086
      image: ./Images/void-live-x86_64-musl-20250202-base.iso
@@ -13,4 +14,4 @@ disks:
      format: qcow2
      size: 20G
      directory: ./disks`
-
+```
