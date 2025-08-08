@@ -1,0 +1,17 @@
+vm:
+   - name: void
+     ram: 4086
+     image: ./Images/void-live-x86_64-musl-20250202-base.iso
+     disk: phys1
+     network: br1
+
+disks:
+   - name: void
+     format: qcow2
+     size: 20G
+     directory: ./disks
+
+   - name: phys1
+     format: raw
+     path: /dev/nvme0n1p2
+
